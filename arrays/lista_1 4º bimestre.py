@@ -38,5 +38,52 @@ print(lista)
 '''
 # EXERCICIO 6
 '''
-
+l = []
+qtd = int(input("Informe a quantidade de elementos: "))
+for i in range(qtd):
+    l.append(int(input(f"Informe o número de índice {i} da lista: "))*2)
+print(l)
+'''
+# EXERCICIO 7
+'''
+l = []
+n = int(input("Informe um número para a tabuada: "))
+for i in range(1, 11):
+    l.append(n*i)
+print(f"Tabuada do {n}: {l}")
+'''
+# EXERCICIO 8
+'''
+n = []
+qtd = int(input("Informe a quantidade de notas: "))
+for i in range(qtd):
+    n.append(int(input(f"Informe a {i+1}º nota: ")))
+print(f"Notas: {n}\nMédia: {sum(n)/qtd:.1f}")
+'''
+# EXERCICIO 9
+'''
+n = []
+par = []
+impar = []
+for i in range(int(input("Informe a quantidade de números a serem digitados: "))):
+    valor = int(input(f"Informe o {i+1}º número: "))
+    n.append(valor)
+    if valor%2 == 0:
+        par.append(valor)
+    else:
+        impar.append(valor)
+print(f"Números informados: {n}\nNúmeros Pares: {par}\nNúmeros Ímpares: {impar}")
+'''
+# EXERCICIO 10
+'''
+n = []
+s = 0
+m = 1
+qtd = int(input("Informe a quantidade de elementos: "))
+for i in range(qtd):
+    valor = int(input(f"Informe o {i+1}º número: "))
+    n.append(valor)
+    s += valor
+    m = m*valor
+print(f"A lista é: {n}\nA soma é: {s}\nA multiplicação: {m}")
 '''
