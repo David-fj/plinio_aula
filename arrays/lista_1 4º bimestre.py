@@ -87,3 +87,13 @@ for i in range(qtd):
     m = m*valor
 print(f"A lista é: {n}\nA soma é: {s}\nA multiplicação: {m}")
 '''
+# EXERCICIO 11
+
+l = []
+s = 0
+nome = input("Informe o nome do(a) atleta: ")
+for i in range(5):
+    valor = float(input(f"Informe o {i+1}º salto: "))
+    l.append(valor)
+    s+= valor
+print(f"Atleta: {nome}\nSaltos: {l}\nA média dos saltos: {s/5:.2f}m")
